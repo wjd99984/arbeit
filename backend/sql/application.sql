@@ -25,6 +25,10 @@ create index resume_id
 select *
 from application;
 
+DELETE
+FROM application
+WHERE member_id = 69;
+
 SELECT DISTINCT j.member_id boss_id, r.member_id
 FROM resume r
          JOIN application a ON r.id = a.resume_id
