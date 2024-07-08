@@ -62,7 +62,13 @@ const Navbar = () => {
   };
 
   return (
-    <Box bg="white" borderBottom="3px solid #eaeaea" height="110px" mb={"70px"}>
+    <Box
+      minW={"1100px"}
+      bg="white"
+      borderBottom="3px solid #eaeaea"
+      height="110px"
+      mb={"70px"}
+    >
       <Box bg={"white"} h={"3px"} mb={"40px"} />
       <Center minWidth={"1000px"} mx={{ base: "0px", xl: "200px" }} mt={"40px"}>
         <HStack w={"1100px"} spacing={7}>

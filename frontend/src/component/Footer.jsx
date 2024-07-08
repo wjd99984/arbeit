@@ -1,8 +1,6 @@
 import { Box, Flex, Select, Text, useMediaQuery } from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom";
 
 export function Footer() {
-  const navigate = useNavigate();
   const [isNeedResize] = useMediaQuery("(max-width: 1050px)");
   const footerList = [
     "회사소개",
@@ -32,27 +30,14 @@ export function Footer() {
   };
 
   return (
-    <Box h={"200px"} bg={"transparent"}>
+    <Box minW={"1100px"} h={"200px"} bg={"transparent"} margin={"auto"}>
       <Box
-        w={"full"}
-        // my={"20px"}
         borderY={"2px solid lightgray"}
         display={"flex"}
         justifyContent={"center"}
       >
-        <Flex
-          w={"1050px"}
-          h={"70px"}
-          justifyContent={"space-between"}
-          cursor={"pointer"}
-        >
-          <Box
-            display={"flex"}
-            alignItems={"center"}
-            gap={"20px"}
-            // ml={"425px"}
-            p={5}
-          >
+        <Flex h={"70px"} justifyContent={"space-between"} cursor={"pointer"}>
+          <Box display={"flex"} alignItems={"center"} gap={"20px"} p={5}>
             {footerList.map((item, index) => (
               <Text key={index} fontSize={isNeedResize ? "15px" : "medium"}>
                 {item}

@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
 @Getter
 @AllArgsConstructor
@@ -32,7 +34,8 @@ public class Board {
     }
 
     public String getInserted() {
-        LocalDateTime now = LocalDateTime.now();
+
+        ZonedDateTime now = ZonedDateTime.now(ZoneId.of("Asia/Seoul")); // Set your timezone
 
         Duration duration = Duration.between(inserted, now);
 

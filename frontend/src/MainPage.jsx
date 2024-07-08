@@ -47,6 +47,7 @@ function MainPage() {
   const handleMouseLeave = () => {
     setHoveredBox(null);
   };
+
   return (
     <Box w={"100%"} h={"1200px"}>
       <Helmet>
@@ -338,7 +339,7 @@ function MainPage() {
           >
             <Center
               {...categoryMenu}
-              backgroundImage="url('public/menu/industry.jpg')"
+              backgroundImage="url('public/industry.jpg')"
             />
             <Center mt={"15px"}>생산업</Center>
           </Box>
@@ -353,7 +354,7 @@ function MainPage() {
             <Box>
               <Center
                 {...categoryMenu}
-                backgroundImage="url('public/menu/haircut.jpg')"
+                backgroundImage="url('public/haircut.jpg')"
               />
             </Box>
             <Center mt={"15px"}>미용</Center>
@@ -369,7 +370,7 @@ function MainPage() {
             <Box>
               <Center
                 {...categoryMenu}
-                backgroundImage="url('public/menu/office.jpg')"
+                backgroundImage="url('public/office.jpg')"
               />
             </Box>
             <Center mt={"15px"}>사무업무</Center>
@@ -385,7 +386,7 @@ function MainPage() {
             <Box>
               <Center
                 {...categoryMenu}
-                backgroundImage="url('public/menu/cafe.jpg')"
+                backgroundImage="url('public/cafe.jpg')"
               />
             </Box>
             <Center mt={"15px"}>카페</Center>
@@ -403,7 +404,7 @@ function MainPage() {
             <Box>
               <Center
                 {...categoryMenu}
-                backgroundImage="url('public/menu/market.jpg')"
+                backgroundImage="url('public/market.jpg')"
               />
             </Box>
             <Center mt={"15px"}>편의점</Center>
@@ -419,7 +420,7 @@ function MainPage() {
             <Box>
               <Center
                 {...categoryMenu}
-                backgroundImage="url('public/menu/beer.jpg')"
+                backgroundImage="url('public/beer.jpg')"
               />
             </Box>
             <Center mt={"15px"}>술집</Center>
@@ -435,7 +436,7 @@ function MainPage() {
             <Box>
               <Center
                 {...categoryMenu}
-                backgroundImage="url('public/menu/movie.jpg')"
+                backgroundImage="url('public/movie.jpg')"
               />
             </Box>
             <Center mt={"15px"}>영화관</Center>
@@ -451,7 +452,7 @@ function MainPage() {
             <Box>
               <Center
                 {...categoryMenu}
-                backgroundImage="url('public/menu/themapark.jpg')"
+                backgroundImage="url('public/themapark.jpg')"
               />
             </Box>
             <Center mt={"15px"}>놀이공원</Center>
@@ -469,7 +470,7 @@ function MainPage() {
             <Box>
               <Center
                 {...categoryMenu}
-                backgroundImage="url('public/menu/delivery.jpg')"
+                backgroundImage="url('public/delivery.jpg')"
               />
             </Box>
             <Center mt={"15px"}>배달</Center>
@@ -485,7 +486,7 @@ function MainPage() {
             <Box>
               <Center
                 {...categoryMenu}
-                backgroundImage="url('public/menu/food.jpg')"
+                backgroundImage="url('public/food.jpg')"
               />
             </Box>
             <Center mt={"15px"}>요식업</Center>
@@ -501,7 +502,7 @@ function MainPage() {
             <Box>
               <Center
                 {...categoryMenu}
-                backgroundImage="url('public/menu/circulation.jpg')"
+                backgroundImage="url('public/circulation.jpg')"
               />
             </Box>
             <Center mt={"15px"}>유통</Center>
@@ -517,7 +518,7 @@ function MainPage() {
             <Box>
               <Center
                 {...categoryMenu}
-                backgroundImage="url('public/menu/etc.jpg')"
+                backgroundImage="url('public/etc.jpg')"
               />
             </Box>
             <Center mt={"15px"}>기타</Center>

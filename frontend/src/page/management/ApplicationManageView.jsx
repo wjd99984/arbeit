@@ -14,7 +14,10 @@ import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { LoginContext } from "../../provider/LoginProvider.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileExport } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronRight,
+  faFileExport,
+} from "@fortawesome/free-solid-svg-icons";
 import { Helmet } from "react-helmet";
 
 const styles = {
@@ -129,7 +132,7 @@ export function ApplicationManageView() {
                 <Spacer />
                 <Flex fontSize={"sm"}>
                   <Box mr={"10px"} color={"#505050"}>
-                    지원 공고 확인하기 >
+                    지원 공고 확인하기 <FontAwesomeIcon icon={faChevronRight} />
                   </Box>
                   <Link href={`/jobs/${jobsId}`}>{application.jobsTitle}</Link>
                 </Flex>

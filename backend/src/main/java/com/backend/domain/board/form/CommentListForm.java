@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
 @Data
 @NoArgsConstructor
@@ -19,7 +21,7 @@ public class CommentListForm {
     private LocalDateTime inserted;
 
     public String getInserted() {
-        LocalDateTime now = LocalDateTime.now();
+        ZonedDateTime now = ZonedDateTime.now(ZoneId.of("Asia/Seoul"));
 
         Duration duration = Duration.between(inserted, now);
 
